@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form test</title>
+        <style>
+            body{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-style: normal;
+            }
+
+            form{
+                text-align: left;
+            }
+
+            ol{
+                list-style-type: circle;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/signup/" method="POST" enctype="multipart/form-data" >
+        <fieldset id="Registrasi_Siswa">
+            <legend>Registrasi Siswa</legend>
+            <hr/>
+            <ol>
+            <h3>Data Diri</h3>
+            <hr/>
+                <li>
+                    <label for="Nama Siswa">Nama Siswa</label>
+                    <input id="Nama Siswa" type="text" autofocus="true" 
+                    required name="Nama Depan" placeholder="Raihan">
+                </li>
+
+                <li>
+                    <label for="Tanggal Lahir">Tanggal Lahir</label>
+                    <input id="Tanggal Lahir" type="date" 
+                    required placeholder="08/01/2001">
+                </li>
+            <hr/>
+            <h4>Kontak</h4>
+            <hr/>
+                <li>
+                    <label for="Alamat" id="alamat">Alamat</label>
+                    <textarea name="" maxlength="100" rows="4" cols="30">Alamat</textarea>
+                </li>
+
+                <li>
+                    <label for="Nomor HP" id="Nomor HP">Nomor HP</label>
+                    <input type="text" maxlength="13"  required placeholder="0899xxxxxxxx">
+                </li>
+                
+                <li>
+                    <label for="email" id="email">Email</label>
+                    <input type="text" required placeholder="user@example.com">
+                </li>
+            <hr/>
+            <h4>Kelas</h4>
+            <hr/>
+                <li>
+                    <label for="jurusan" id="jurusan">Jurusan</label>
+                    <select name="jurusan">
+                        <option value="">--Pilih--</option>
+                        <option value="">IPA</option>
+                        <option value="">IPS</option>
+                    </select>
+                </li>
+
+                <li>
+                    <label for="Kelas" id="kelas">Kelas</label>
+                    <select name="Kelas">
+                        <option value="">--Pilih--</option>
+                        <option value="">X</option>
+                        <option value="">XI</option>
+                        <option value="">XII</option>
+                    </select>
+                </li>
+
+                <li>
+                    <label for="Bukti Pembayaran" id="bukti pembayaran">Bukti Pembayaran</label>
+                    <input type="file" required >
+                </li>
+
+                <li>
+                    <input type="submit" value="Kirim" name="Submit">
+                </li>
+
+
+
+            </ol>
+        </fieldset> 
+        
+        </form>
+    </body>
+</html>
