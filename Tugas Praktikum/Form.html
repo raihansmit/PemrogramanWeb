@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <style>
+            .fieldset{
+                background-color: lightgrey;
+                width: 30%;
+                padding: 10px;
+            }
+            .form{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: medium;
+                color: black;
+                background-color: papayawhip;
+                padding: 10px;
+            }
+            .form legend{
+                text-align: center;
+                padding: 8px;
+            }
+
+            .form input{
+                padding: 15px;
+                vertical-align: 20px;
+                margin: 0%;
+                width: 71%;
+            }
+
+            .form button{
+                padding: 5px;
+            }
+
+            .radio{
+                margin: 0%;
+                padding: 10px;
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: papayawhip;
+                
+            }
+
+            .radio input{
+                padding: 15px;;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset class="fieldset">
+            <div class="form">
+                <form>
+                    <legend>---- Registrasi Siswa ----</legend>
+                    <h2>Informasi Personal</h2>
+                    <hr/>
+                    <label for="nama">Nama</label>
+                    <br/>
+                    <input type="text" name="nama" id="nama" required placeholder="Raihan Kaeni Smit">
+                    <br/>
+                    <label for="dob">Tempat Tanggal Lahir</label>
+                    <br/>
+                    <input type="date" name="dob" id="dob">
+                    <br/>
+                    <h2>Informasi Kontak</h2>
+                    <hr/>
+                    <label for="email">Email</label>
+                    <br/>
+                    <input type="email" name="email" id="email" required placeholder="user@example.com">
+                    <br/>
+                    <label for="kota">Kota</label>
+                    <br/>
+                    <input type="text" name="kota" id="kota">
+                    <br/>
+                    <label for="kodepos">Kode Pos</label>
+                    <br/>
+                    <input type="number" name="kodepos" id="kodepos">
+                    <br/>
+                    <label for="hp">No.HP</label>
+                    <br/>
+                    <input type="number" name="hp" id="hp" placeholder="+62899-1234-1234" required>
+                    <br/>
+                    <label for="alamat">Alamat</label>
+                    <br/>
+                    <textarea name="alamat"cols="35" rows="10" required></textarea>
+            </div>
+            <div class="radio">
+                    <label for="mt">Tipe Member</label>
+                    <br/>
+                    <br/>
+                        <input type="radio" name="mt">Regular
+                        <input type="radio" name="mt">Premium
+                        <input type="radio" name="mt">VIP
+                    <br/>
+                    <br/>
+                    <h2>Informasi Kursus</h2>
+                    <hr/>
+            </div>
+            <div class="form input">
+                    <label for="nk">Nama Kursus</label>
+                    <br/>
+                    <input type="text" name="nk" id="nk">
+                    <br/>
+            </div>
+            <div class="radio">
+                    <label for="pembayaran">Pembayaran</label>
+                    <br/>
+                        <input type="radio" name="mt">Regular
+                        <input type="radio" name="mt">Premium
+                        <input type="radio" name="mt">VIP
+                    <br/>
+            </div>
+            <div class="form input">
+                    <label for="buktipembayaran">Bukti Pembayaran</label>
+                    <br/>
+                    <input type="file" name="buktipembayaran">
+            </div>
+            <br/>
+            <button type="submit">Sign Up</button>
+                </form>
+        </fieldset>
+    </body>
+</html>
