@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+
+<!-- MY CSS -->
+
+    <style>
+        
+        #border{
+            border: 1px solid black;
+            width: 350px;
+            height: 300px;
+            right: 5px;
+            bottom: 65px;
+            position: fixed;
+        }
+        #border_input{
+            border: 1px solid black;
+            width: 281px;
+            height: 50px;
+            bottom: 7px;
+            right: 73px;
+            position: fixed;
+        }
+
+        .btn_footer{
+            right: 2px;
+            bottom: 6px;
+            position: fixed;
+            padding: 17px;
+        }
+    </style>
+
+<!-- Bootstrap CSS -->
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div id="border"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" name="" id="border_input" value="">
+            </td>
+            <td>
+                <button type="submit" onclick="send()" class="btn_footer">Send</button>
+            </td>
+        </tr>
+    </table>
+   
+
+    <script>
+
+        function send(){
+            let border = document.getElementById("border");
+            let border_input = document.getElementById("border_input");
+
+            let hasil = border.innerHTML = border.innerHTML + "<br/>" + border_input.value;
+            let input = border_input.value="";
+            console.log("Berhasil")
+
+            
+
+        }
+
+    </script>
+
+
+
+
+
+</body>
+</html>
